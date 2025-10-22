@@ -1,0 +1,33 @@
+#layout-box{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.layout-item{
+    width: 50%;
+    box-shadow:  0 0 10px black;
+    background-color: rgb(5, 5, 57);
+    color: rgb(163, 240, 255);
+
+}
+h1{
+    background-image: linear-gradient(to right ,  #0d4ed1, #3f859f, #83d553);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.layout-item-header h2{
+    background-image: linear-gradient(to right ,  #1da1bf, #b5ac49);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.layout-item-header i{
+    cursor: pointer;
+    color: red;
+}
+
+.layout-item .layout-item-text h4 span{
+    color: rgb(210, 218, 225);
+}
+@media screen and (max-width : 992px ) {
+    
+}
