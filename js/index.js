@@ -6,7 +6,7 @@ var productDescriptionInput = document.getElementById("productDescription")
 var productImageInput = document.getElementById("productImage")
 var productSearchInput = document.getElementById("productSearch")
 var viewLayout = document.getElementById("layout-box")
-
+var alertBox = document.getElementsByClassName("alert")
 // console.log(productNameInput , productPriceInput , productCategoryInput , productDescriptionInput);
 // console.log(typeof productNameInput); // object
 
@@ -249,10 +249,14 @@ function validateProductInputs(element){
     if (regex[element.id].value.test(element.value)) {
         element.classList.add("is-valid");
         element.classList.remove("is-invalid");
-        regex[element.id].isValid = true
+        regex[element.id].isValid = true;
+        element.nextElementSibling.classList.replace("d-block" , "d-none" );
+
     }else{
         element.classList.add("is-invalid");
         element.classList.remove("is-valid");
+        regex[element.id].isValid = false;
+        element.nextElementSibling.classList.replace("d-none" , "d-block");
     }
 
     if(element.value == ""){
