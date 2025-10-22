@@ -90,9 +90,12 @@ function displayProducts(list) {
                 <td>${list[i].category}</td>
                 <td>${list[i].description}</td>
                 <td>
-                    <button onclick="viewProduct(${list[i].id})" class="btn btn-warning text-white"><i class="fa-solid fa-eye"></i>View</button>
-                    <button onclick="deleteProduct(${list[i].id})" class="btn btn-danger"><i class="fa-solid fa-trash"></i>Delete</button>
-                    <button onclick="fillUpdateInputs(${list[i].id})" class="btn btn-success"><i class="fa-solid fa-pen-to-square"></i>Update</button>
+
+                    <div class="actions d-flex justify-content-center gap-2">
+                        <button onclick="viewProduct(${list[i].id})" class="btn btn-warning text-white"><i class="fa-solid fa-eye"></i>View</button>
+                        <button onclick="deleteProduct(${list[i].id})" class="btn btn-danger"><i class="fa-solid fa-trash"></i>Delete</button>
+                        <button onclick="fillUpdateInputs(${list[i].id})" class="btn btn-success"><i class="fa-solid fa-pen-to-square"></i>Update</button>
+                    </div>
                     
                 </td>
 
